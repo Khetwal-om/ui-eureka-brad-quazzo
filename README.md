@@ -629,5 +629,304 @@
 # Solutions Page
 
 ```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quazzo</title>
+</head>
+
+<body>
+<!-- Header -->
+<header class="main-header-inner">
+    <nav class="transparent">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Quazzu</a>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class="active-link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="solutions.html">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <h4 class="purple-text text-darken-4 center">Quazzu</h4>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-home grey-text text-darken-4"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="solutions.html">
+                            <i class="fa fa-cog grey-text text-darken-4"></i> Solutions</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">
+                            <i class="fa fa-users grey-text text-darken-4"></i> Sign Up</a>
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="#login-modal" class="btn purple modal-trigger">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Showcase -->
+    <div class="showcase container">
+        <div class="row">
+            <div class="col s12 m10 offset-m1 center">
+                <h5>Welcome To Quazzu</h5>
+                <h1>Cloud Solutions</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<!--Footer -->
+
+<footer class="page-footer deep-purple lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus dicta distinctio dolore, provident repudiandae sit ut! Fuga, illo, velit?</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">solutinos</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Signup</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright deep-purple darken-1">
+        <div class="container">
+            Quazzu &copy;  2019
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--  Modal at the bottom-->
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <h4>Account Login</h4>
+        <p>Login to access your account dashboard</p>
+        <form>
+            <div class="input-field">
+                <input type="email" name="" id="email">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-field">
+                <input type="password" name="" id="password">
+                <label for="password">Password</label>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal close btn grey">
+            <i class="fa fa-sync"></i>
+            Reset Password
+        </a>
+
+
+        <a href="#!" class="modal-action modal close btn purple">
+            <i class="fa fa-lock"></i>
+            Login
+        </a>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Custom JS & jQuery here
+
+        $('.carousel-slider').carousel({
+            fullWidth:true
+        });
+
+        $('.button-collapse').sideNav();
+
+        $('.modal').modal();
+
+    });
+</script>
+</body>
+
+</html>
+```
+
+
+
+```css
+
+.main-header-inner{
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header .showcase {
+  padding-top: 100px;
+}
+```
+
+
+
+
+# Sign up page
+
+
+```html
+
+
+<!--Section :Signup-->
+<div class="section section section-signup">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h4>Get a  free account</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+                <h4>Get a  free account</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+
+                <h4>Get a  free account</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+
+                <h4>Download the free one</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+                <h4>Get a  free account</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+
+                <h4>Get a  free account</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis consectetur consequuntur cum deserunt dolorum eveniet incidunt nemo perferendis ut.</p>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card-panel grey lighten-4 grey-text text-darken-4 z-depth-0">
+                    <div class="input-field">
+                        <input type="text" id="first_name">
+                        <label for="first_name">First name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="last_name">
+                        <label for="last_name">Last name</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" id="email">
+                        <label for="name">email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password">
+                        <label for="password">password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="company">
+                        <label for="name">company</label>
+                    </div>
+
+                    <div class="input-field">
+                        <select name="" id="role">
+                            <option value="" disabled selected>Select Role</option>
+                        <option value="professional">Professional</option>
+                        <option value="manager">Manager</option>
+                        <option value="other">Other</option>
+                        <option value="student">Student</option>
+                        </select>
+
+                    </div>
+
+                    <input type="submit" value="signup" class="btn btn-large purple btn-extend">
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 ```
+
+
+
+
+```css
+
+
+.btn-extend{
+  display: block;
+  width: 100%;
+}
+
+```
+
